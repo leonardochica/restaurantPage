@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Caribean Restaurant</title>
+  </head>
+  <body>
+    <header id="home" class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top__container">
+            <a href="index.html" class="logo">
+              <i class="fas fa-globe-americas"></i>
+              Caribean
+            </a>
+            <nav class="navbar">
+              <ul>
+                <li class="navbar__item">
+                  <a href="index.html" class="navbar__link active">Home</a>
+                </li>
+                <li class="navbar__item navbar__dropdown">
+                  <a href="menu.html" class="navbar__link"
+                    >Menu
+                    <i class="navbar__icon fas fa-chevron-right"></i>
+                  </a>
+                  <ul class="navbar__dropdown__subitem">
+                    <li class="navbar__subitem">
+                      <a href="#" class="navbar__link">Popular</a>
+                    </li>
+                    <li class="navbar__subitem">
+                      <a href="#" class="navbar__link">Dine-In</a>
+                    </li>
+                    <li class="navbar__subitem">
+                      <a href="#" class="navbar__link">Order Online</a>
+                    </li>
+                    <li class="navbar__subitem">
+                      <a href="#" class="navbar__link">Drinks</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar__item">
+                  <a href="about.html" class="navbar__link">About</a>
+                </li>
+                <li class="navbar__item navbar__dropdown">
+                  <a href="reservations.html" class="navbar__link"
+                    >Reservations<i
+                      class="navbar__icon fas fa-chevron-right"
+                    ></i
+                  ></a>
+                  <ul class="navbar__dropdown__subitem">
+                    <li class="navbar__subitem">
+                      <a href="reservations.html" class="navbar__link"
+                        >Reserve a Table</a
+                      >
+                    </li>
+                    <li class="navbar__subitem">
+                      <a
+                        href="reservations.html#section-private-events"
+                        class="navbar__link"
+                        >Private Events</a
+                      >
+                    </li>
+                    <li class="navbar__subitem">
+                      <a
+                        href="reservations.html#section-cooking-courses"
+                        class="navbar__link"
+                      >
+                        Courses</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar__item">
+                  <a href="locations.html" class="navbar__link">Locations </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="burger">
+              <div class="line"></div>
+            </div>
+            <div class="contact">
+              <a href="#" class="contact__item" title="832-599-1919">
+                <i
+                  class="contact__link icon icon--light fas fa-mobile-alt fa-2x"
+                ></i>
+                <!-- <span>832-599-1919</span> -->
+              </a>
+              <a href="#" class="contact__item">
+                <i
+                  class="contact__link icon icon--light fab fa-facebook fa-2x"
+                ></i>
+              </a>
+              <a href="#" class="contact__item">
+                <i
+                  class="contact__link icon icon--light fab fa-instagram fa-2x"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="showcase container">
+        <!-- Showcase -->
+        <section class="header__main">
+          <h1 class="showcase__slogan text--primary font--special">
+            Welcome To Caribean
+          </h1>
+          <h1 class="showcase__title">
+            Delicious Latin American Cuisine
+          </h1>
+          <a href="reservations.html" class="btn btn--transparent"
+            >Make a Reservation</a
+          >
+        </section>
+        <!-- Special Plates: Section -->
+        <section class="specials">
+          <div class="specials__item">
+            <img
+              class="specials__image"
+              src="images/specials/specials_img1.jpg"
+              alt=""
+            />
+            <h3 class="specials__title">Burgers</h3>
+            <p>Juicy Oven-Cooked Burgers</p>
+          </div>
+          <div class="specials__item">
+            <img
+              class="specials__image"
+              src="images/specials/specials_img2.jpg"
+              alt=""
+            />
+            <h3 class="specials__title">Mushroom Florentine Pasta</h3>
+            <p>Pasta, parmesan cheese, butter, garlic</p>
+          </div>
+          <div class="specials__item">
+            <img
+              class="specials__image"
+              src="images/specials/specials_img3.jpg"
+              alt=""
+            />
+            <h3 class="specials__title">Filet Mignon</h3>
+            <p>Filet mignon, red wine, beef broth, whipping cream</p>
+          </div>
+          <div class="specials__item">
+            <img
+              class="specials__image"
+              src="images/specials/specials_img4.jpg"
+              alt=""
+            />
+            <h3 class="specials__title">Mexican Pinto Beans</h3>
+            <p>Pound pinto beans, fire roasted tomatoes, adobo sauce</p>
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <!-- Section: Menu -->
+    <section class="menu section">
+      <div class="container">
+        <div class="section__header">
+          <div class="section__line"></div>
+          <h1 class="section__title">Our Menu</h1>
+          <div class="section__line"></div>
+        </div>
+        <div class="section__content">
+          <div class="section__item">
+            <div class="section__image section__image--1">
+              <div class="image__border"></div>
+            </div>
+            <div class="section__body">
+              <div class="menu__title">
+                <div class="section__line"></div>
+                <h2 class="font--special text--secondary">Popular Items</h2>
+                <div class="section__line"></div>
+              </div>
+              <div class="menu__item">
+                <div class="item-top">
+                  <h4 class="menu__subheading">
+                    Grilled chicken with Shrimp Tacos
+                  </h4>
+                  <div class="menu__line"></div>
+                  <p class="menu__price">$15</p>
+                </div>
+                <p class="menu__text">
+                  Lorem ipsum dolor sit amet consectetur.
+                </p>
+              </div>
+              <div class="menu__item">
+                <div class="item-top">
+                  <h4 class="menu__subheading">
+                    Filet Mignon
+                  </h4>
+                  <div class="menu__line"></div>
+                  <p class="menu__price">$35</p>
+                </div>
+                <p class="menu__text">
+                  Lorem ipsum dolor sit amet consectetur.
+                </p>
+              </div>
+              <div class="menu__item">
+                <div class="item-top">
+                  <h4 class="menu__subheading">
+                    Double meat burger with cheese
+                  </h4>
+                  <div class="menu__line"></div>
+                  <p class="menu__price">$13</p>
+                </div>
+                <p class="menu__text">
+                  Lorem ipsum dolor sit.
+                </p>
+              </div>
+              <div class="menu__item">
+                <div class="item-top">
+                  <h4 class="menu__subheading">
+                    Chicken Quesadillas
+                  </h4>
+                  <div class="menu__line"></div>
+                  <p class="menu__price">$10</p>
+                </div>
+                <p class="menu__text">
+                  Lorem ipsum dolor sit Lorem, ipsum.
+                </p>
+              </div>
+              <a href="menu.html" class="menu__button btn btn--secondary"
+                >View Full Menu</a
+              >
+            </div>
+          </div>
+          <div class="section__item reverse">
+            <div class="section__image section__image--2">
+              <div class="image__border"></div>
+            </div>
+            <div class="section__body">
+              <div class="menu__title">
+                <div class="section__line"></div>
+                <h2 class="font--special text--secondary">Popular Drinks</h2>
+                <div class="section__line"></div>
+              </div>
+              <div class="menu__item">
+                <h4 class="menu__subheading">
+                  Chardonnay
+                </h4>
+                <div class="item-top">
+                  <p class="menu__text">
+                    Bottle
+                  </p>
+                  <div class="menu__line"></div>
+                  <p class="menu__price">$40</p>
+                </div>
+                <div class="item-top">
+                  <p class="menu__text">
+                    Glass
+                  </p>
+                  <div class="menu__line"></div>
+                  <p class="menu__price">$15</p>
+                </div>
+              </div>
+              <div class="menu__item">
+                <h4 class="menu__subheading">
+                  Cabernet Sauvignon
+                </h4>
+                <div class="item-top">
+                  <p class="menu__text">
+                    Bottle
+                  </p>
+                  <div class="menu__line"></div>
+                  <p class="menu__price">$80</p>
+                </div>
+                <div class="item-top">
+                  <p class="menu__text">
+                    Glass
+                  </p>
+                  <div class="menu__line"></div>
+                  <p class="menu__price">$20</p>
+                </div>
+              </div>
+              <div class="menu__item">
+                <h4 class="menu__subheading">
+                  Caribean Tequila
+                </h4>
+                <div class="item-top">
+                  <p class="menu__text">
+                    Bottle
+                  </p>
+                  <div class="menu__line"></div>
+                  <p class="menu__price">$30</p>
+                </div>
+                <div class="item-top">
+                  <p class="menu__text">
+                    Glass
+                  </p>
+                  <div class="menu__line"></div>
+                  <p class="menu__price">$10</p>
+                </div>
+              </div>
+
+              <a href="menu.html" class="menu__button btn btn--secondary"
+                >View Full Menu</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: About -->
+    <section class="about section parallax-container">
+      <div class="parallax">
+        <div class="parallax-img about__img--1">
+          <h1 class="blend-mode font--special">About</h1>
+        </div>
+        <div class="parallax-img about__img--2">
+          <h1 class="blend-mode font--special">Us</h1>
+        </div>
+      </div>
+      <div class="about__text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          asperiores, modi soluta quisquam possimus doloremque maiores tenetur
+          numquam cum deserunt alias iusto ratione perferendis, perspiciatis
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aut
+          suscipit corporis dolore! Vel, obcaecati! Voluptates quisquam beatae
+          alias deleniti! Lorem ipsum dolor, sit amet consectetur adipisicing
+          elit. Id mollitia suscipit autem esse deleniti nam. Lorem ipsum dolor
+          sit, amet consectetur adipisicing elit. Totam, reprehenderit.
+        </p>
+      </div>
+      <div class="about__footer">
+        <a
+          href="about.html#section-history"
+          class="about__button btn btn--secondary"
+          >Our History</a
+        >
+        <a href="about.html#section-team" class="about__button btn btn--primary"
+          >Our Team</a
+        >
+      </div>
+    </section>
+
+    <!-- Section: Services -->
+    <section class="services section">
+      <div class="container">
+        <div class="section__header">
+          <div class="section__line"></div>
+          <h1 class="section__title">Our Services</h1>
+          <div class="section__line"></div>
+        </div>
+        <p class="text--center">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
+          cupiditate tempora voluptatibus
+        </p>
+        <div class="services__content">
+          <div class="services__item">
+            <a href="">
+              <i class="services__icon fas fa-birthday-cake fa-4x"></i>
+            </a>
+            <h3 class="services__title">Private Events</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+              animi.
+            </p>
+            <a
+              href="reservations.html#section-private-events"
+              class="services__button btn"
+              >Reserve</a
+            >
+          </div>
+
+          <div class="services__item">
+            <a href="">
+              <i class="services__icon fas fa-cart-arrow-down fa-4x"></i>
+            </a>
+            <h3 class="services__title">Food Delivery</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+              animi.
+            </p>
+            <a href="menu.html#order-online" class="services__button btn"
+              >Order Now</a
+            >
+          </div>
+
+          <div class="services__item">
+            <a href="">
+              <i class="services__icon fas fa-utensils fa-4x"></i>
+            </a>
+            <h3 class="services__title">Cooking Courses</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+              animi.
+            </p>
+            <a
+              href="reservations.html#section-cooking-courses"
+              class="services__button btn"
+              >Register</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Reservations -->
+    <section class="reservations section">
+      <div class="container">
+        <div class="reservations__container">
+          <div class="section__header">
+            <div class="section__line"></div>
+            <h1 class="section__title">Reservations</h1>
+            <div class="section__line"></div>
+          </div>
+          <div class="reservations__title">
+            <div class="reservations__line"></div>
+            <h2 class="reservations__heading font--special text--secondary">
+              Book a Table
+            </h2>
+            <div class="reservations__line"></div>
+          </div>
+          <!-- Form -->
+          <div class="reservations__body">
+            <form class="reservations__form">
+              <div class="reservations__item">
+                <label class="reservations__label" for="name">Full Name</label>
+                <input
+                  class="reservations__input"
+                  type="text"
+                  id="name"
+                  required
+                />
+              </div>
+              <div class="reservations__item">
+                <label class="reservations__label" for="date">Date</label>
+                <input
+                  class="reservations__input reservations__date"
+                  type="date"
+                  name="date"
+                  id="date"
+                />
+              </div>
+              <div class="reservations__item">
+                <label class="reservations__label" for="time">Time</label>
+                <select class="reservations__input" name="time" id="time">
+                  <option value="" disabled selected>Select Time</option>
+                  <option value="12">12:00 pm</option>
+                  <option value="1">1:00 pm</option>
+                  <option value="2">2:00 pm</option>
+                  <option value="5">5:00 pm</option>
+                  <option value="6">6:00 pm</option>
+                  <option value="7">7:00 pm</option>
+                  <option value="8">8:00 pm</option>
+                  <option value="9">9:00 pm</option>
+                </select>
+              </div>
+              <div class="reservations__item">
+                <label class="reservations__label" for="time">Person</label>
+                <select class="reservations__input" name="people" id="people">
+                  <option value="" disabled selected>Select No People</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5+">5+</option>
+                </select>
+              </div>
+              <input
+                type="submit"
+                value="Book Now"
+                class="reservations__button btn btn--primary"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Locations -->
+    <section class="locations">
+      <div class="locations__body">
+        <div class="section__header">
+          <div class="section__line"></div>
+          <h1 class="section__title">Our Locations</h1>
+          <div class="section__line"></div>
+        </div>
+        <div class="section__content">
+          <h4 class="locations__title">Houston</h4>
+          <p>
+            <a
+              href="https://www.google.com/maps/place/1500+Main+St,+Houston,+TX+77002,+USA/@29.753119,-95.3708057,17z/data=!3m1!4b1!4m5!3m4!1s0x8640bf3e8ee3385d:0x467fffbdfd44e836!8m2!3d29.753119!4d-95.368617"
+              target="_blank"
+              class="locations__address"
+            >
+              <i class="icon--dark fas fa-map-marker-alt"></i>
+              1500 Main Street, Houston, Texas 77004
+            </a>
+          </p>
+          <h4 class="locations__title">Sugar Land</h4>
+          <p>
+            <a
+              href="https://www.google.com/maps/place/First+Colony+Mall/@29.5928359,-95.6373771,14.02z/data=!4m8!1m2!2m1!1s7558+Lightgreen+Ave,+Sugar+Land!3m4!1s0x8640e6bc65c4c97d:0x821e149cb0c85cb6!8m2!3d29.5917071!4d-95.6246138"
+              target="_blank"
+              class="locations__address"
+            >
+              <i class="icon--dark fas fa-map-marker-alt"></i>
+              7558 Lightgreen Ave, Sugar Land, Texas 77456
+            </a>
+          </p>
+
+          <h2 class="locations__title font--special">Opening Hours</h2>
+          <p>Monday - Sunday: 10:00 am - 2:00 pm</p>
+          <p>Monday - Sunday: 5:30 pm - 10:00 pm</p>
+        </div>
+        <div class="social">
+          <div class="social__item">
+            <a href="#">
+              <i class="social__icon fab fa-facebook-f fa-2x"></i>
+            </a>
+          </div>
+          <div class="social__item">
+            <a href="#">
+              <i class="social__icon fab fa-twitter fa-2x"></i>
+            </a>
+          </div>
+          <div class="social__item">
+            <a href="#">
+              <i class="social__icon fab fa-instagram fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="locations__map"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__main-links">
+          <ul>
+            <li class="footer__title">Main Links</li>
+            <li class="footer__item">
+              <a href="index.html" class="footer__link">Home</a>
+            </li>
+            <li class="footer__item">
+              <a href="menu.html" class="footer__link">Menu</a>
+            </li>
+            <li class="footer__item">
+              <a href="reservations.html" class="footer__link">Reservations</a>
+            </li>
+            <li class="footer__item">
+              <a href="about.html" class="footer__link">About</a>
+            </li>
+            <li class="footer__item">
+              <a href="locations.html" class="footer__link">Locations</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__services">
+          <ul>
+            <li class="footer__title">Services</li>
+            <li class="footer__item">
+              <a
+                href="reservations.html#section-private-events"
+                class="footer__link"
+                >Private Events</a
+              >
+            </li>
+            <li class="footer__item">
+              <a href="menu.html#order-online" class="footer__link"
+                >Order Online</a
+              >
+            </li>
+            <li class="footer__item">
+              <a
+                href="reservations.html#section-cooking-courses"
+                class="footer__link"
+                >Cooking Classes</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <ul>
+            <li class="footer__title">Contact Us</li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">
+                <i class="fas fa-mobile-alt"></i> 832-599-1919
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">
+                <i class="fas fa-envelope"></i> caribean@contact.com
+              </a>
+            </li>
+            <li class="footer__item">
+              <ul class="footer__social">
+                <li class="footer__item">
+                  <a href="#">
+                    <i class="footer__icon fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#">
+                    <i class="footer__icon fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#">
+                    <i class="footer__icon fab fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__discount">
+          <h3 class="footer__title">First Time Visiting Us</h3>
+          <label class="footer__label" for="email">Email</label>
+          <input
+            type="email"
+            class="footer__input"
+            placeholder="Enter Email"
+            id="email"
+          />
+          <button class="btn btn--white footer__button">
+            Get 15% Discount
+          </button>
+        </div>
+        <div class="footer__copyright">
+          <p class="copyright">Copyright &copy; 2020 All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Main Script -->
+    <script src="js/main.js"></script>
+
+    <!-- Google Maps API -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrA9Ur7OvvqKAEJgbewIocxpGQT8xY70o&callback=initMap"
+      async
+      defer
+    ></script>
+  </body>
+</html>

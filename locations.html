@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Latin Restaurant</title>
+  </head>
+  <body>
+    <header id="locations" class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top__container">
+            <a href="index.html" class="logo">
+              <i class="fas fa-globe-americas"></i>
+              Caribean
+            </a>
+            <nav class="navbar">
+              <ul>
+                <li class="navbar__item">
+                  <a href="index.html" class="navbar__link">Home</a>
+                </li>
+                <li class="navbar__item navbar__dropdown">
+                  <a href="menu.html" class="navbar__link"
+                    >Menu
+                    <i class="navbar__icon fas fa-chevron-right"></i>
+                  </a>
+                  <ul class="navbar__dropdown__subitem">
+                    <li class="navbar__subitem">
+                      <a href="#" class="navbar__link">Popular</a>
+                    </li>
+                    <li class="navbar__subitem">
+                      <a href="#" class="navbar__link">Dine-In</a>
+                    </li>
+                    <li class="navbar__subitem">
+                      <a href="#" class="navbar__link">Order Online</a>
+                    </li>
+                    <li class="navbar__subitem">
+                      <a href="#" class="navbar__link">Drinks</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar__item">
+                  <a href="about.html" class="navbar__link">About</a>
+                </li>
+                <li class="navbar__item navbar__dropdown">
+                  <a href="reservations.html" class="navbar__link"
+                    >Reservations<i
+                      class="navbar__icon fas fa-chevron-right"
+                    ></i
+                  ></a>
+                  <ul class="navbar__dropdown__subitem">
+                    <li class="navbar__subitem">
+                      <a href="reservations.html" class="navbar__link"
+                        >Reserve a Table</a
+                      >
+                    </li>
+                    <li class="navbar__subitem">
+                      <a
+                        href="reservations.html#section-private-events"
+                        class="navbar__link"
+                        >Private Events</a
+                      >
+                    </li>
+                    <li class="navbar__subitem">
+                      <a
+                        href="reservations.html#section-cooking-courses"
+                        class="navbar__link"
+                      >
+                        Courses</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar__item">
+                  <a href="locations.html" class="navbar__link active"
+                    >Locations
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="burger">
+              <div class="line"></div>
+            </div>
+            <div class="contact">
+              <a href="#" class="contact__item" title="832-599-1919">
+                <i
+                  class="contact__link icon icon--light fas fa-mobile-alt fa-2x"
+                ></i>
+                <!-- <span>832-599-1919</span> -->
+              </a>
+              <a href="#" class="contact__item">
+                <i
+                  class="contact__link icon icon--light fab fa-facebook fa-2x"
+                ></i>
+              </a>
+              <a href="#" class="contact__item">
+                <i
+                  class="contact__link icon icon--light fab fa-instagram fa-2x"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="showcase container">
+        <!-- Showcase -->
+        <section class="page__showcase">
+          <h1 class="page__title">
+            Our Locations
+          </h1>
+        </section>
+      </div>
+    </header>
+
+    <!-- Locations -->
+    <section class="section section-locations">
+      <div class="container">
+        <div class="section__header">
+          <div class="section__line"></div>
+          <h1 class="section__title">Visit Us</h1>
+          <div class="section__line"></div>
+        </div>
+        <div class="section__body">
+          <div class="locations__content">
+            <h2 class="locations__title">Houston</h2>
+            <p>
+              <a
+                href="https://www.google.com/maps/place/1500+Main+St,+Houston,+TX+77002,+USA/@29.753119,-95.3708057,17z/data=!3m1!4b1!4m5!3m4!1s0x8640bf3e8ee3385d:0x467fffbdfd44e836!8m2!3d29.753119!4d-95.368617"
+                target="_blank"
+                class="locations__address"
+              >
+                <i class="icon--dark fas fa-map-marker-alt"></i>
+                1500 Main Street, Houston, Texas 77004
+              </a>
+            </p>
+            <h2 class="locations__title">Sugar Land</h2>
+            <p>
+              <a
+                href="https://www.google.com/maps/place/First+Colony+Mall/@29.5928359,-95.6373771,14.02z/data=!4m8!1m2!2m1!1s7558+Lightgreen+Ave,+Sugar+Land!3m4!1s0x8640e6bc65c4c97d:0x821e149cb0c85cb6!8m2!3d29.5917071!4d-95.6246138"
+                target="_blank"
+                class="locations__address"
+              >
+                <i class="icon--dark fas fa-map-marker-alt"></i>
+                7558 Lightgreen Ave, Sugar Land, Texas 77456
+              </a>
+            </p>
+  
+            <h2 class="locations__title font--special">Dine-In Hours</h2>
+            <p>Monday - Sunday: 10:00 am - 2:00 pm</p>
+            <p>Monday - Sunday: 5:30 pm - 10:00 pm</p>
+  
+            <h2 class="locations__title font--special">To-Go Hours</h2>
+            <p>Monday - Sunday: 11:00 am - 3:00 pm</p>
+            <p>Monday - Sunday: 6:30 pm - 8:00 pm</p>
+
+            <h2 class="locations__title font--special">Contact Us</h2>
+            <p>(832) 599-1919</p>
+            <p>caribean@contact.com</p>
+           
+            <a href="menu.html#select-item-tab" class="btn btn--primary locations__btn">Order Online</a>
+
+          </div>
+          <div id="locations-map"></div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__main-links">
+          <ul>
+            <li class="footer__title">Main Links</li>
+            <li class="footer__item">
+              <a href="index.html" class="footer__link">Home</a>
+            </li>
+            <li class="footer__item">
+              <a href="menu.html" class="footer__link">Menu</a>
+            </li>
+            <li class="footer__item">
+              <a href="reservations.html" class="footer__link">Reservations</a>
+            </li>
+            <li class="footer__item">
+              <a href="about.html" class="footer__link">About</a>
+            </li>
+            <li class="footer__item">
+              <a href="locations.html" class="footer__link">Locations</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__services">
+          <ul>
+            <li class="footer__title">Services</li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Private Events</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Order Online</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Cooking Classes</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <ul>
+            <li class="footer__title">Contact Us</li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">
+                <i class="fas fa-mobile-alt"></i> 832-599-1919
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">
+                <i class="fas fa-envelope"></i> caribean@contact.com
+              </a>
+            </li>
+            <li class="footer__item">
+              <ul class="footer__social">
+                <li class="footer__item">
+                  <a href="#">
+                    <i class="footer__icon fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#">
+                    <i class="footer__icon fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#">
+                    <i class="footer__icon fab fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__discount">
+          <h3 class="footer__title">First Time Visiting Us</h3>
+          <label class="footer__label" for="email">Email</label>
+          <input
+            type="email"
+            class="footer__input"
+            placeholder="Enter Email"
+            id="email"
+          />
+          <button class="btn btn--white footer__button">
+            Get 15% Discount
+          </button>
+        </div>
+        <div class="footer__copyright">
+          <p class="copyright">Copyright &copy; 2020 All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Main Script -->
+    <script src="js/main.js"></script>
+
+    <!-- Google Maps API -->
+    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrA9Ur7OvvqKAEJgbewIocxpGQT8xY70o&callback=initGoogleMaps"
+      async
+      defer
+    ></script>
+  </body>
+</html>

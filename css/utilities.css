@@ -1,0 +1,148 @@
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  width: 95%;
+}
+
+.section {
+  padding: 2rem 0;
+}
+
+/* Fonts */
+.font--special {
+  font-family: 'Dancing Script', cursive;
+}
+
+.text--primary {
+  color: var(--primary-color);
+}
+.text--secondary {
+  color: var(--secondary-color);
+}
+.text--dark {
+  color: var(--dark-color);
+}
+
+.text--center {
+  text-align: center;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5em 2em;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn--transparent {
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+  background: none;
+}
+
+.btn--primary {
+  color: var(--white-color);
+  background: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.btn--secondary {
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.btn--white {
+  color: var(--dark-color);
+  border: 1px solid var(--dark-color);
+  background: var(--white-color);
+}
+
+.btn--linear {
+  color: var(--white-color);
+  background: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.btn--transparent:hover {
+  background: var(--white-color);
+  border: 1px solid var(--white-color);
+  color: var(--dark-color);
+  transition: all 0.5s;
+}
+
+.btn--primary:hover {
+  background: transparent;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  transition: all 1s;
+}
+
+.btn--secondary:hover {
+  background: var(--secondary-color);
+  border: 1px solid var(--white-color);
+  color: var(--white-color);
+  transition: all 1s;
+}
+
+.btn--white:hover {
+  background: var(--dark-color);
+  border: 1px solid var(--white-color);
+  color: var(--white-color);
+  transition: all 1s;
+}
+
+.btn--linear:hover {
+  background: var(--white-color);
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  transition: all 1s;
+}
+
+/* Icons */
+.icon {
+  display: inline-block;
+}
+
+.icon--light {
+  color: var(--primary-color);
+}
+
+.icon--dark {
+  color: var(--dark-color);
+}
+
+/* Tags */
+.tag {
+  display: inline-block;
+  font-size: 0.75em;
+  padding: 0.2em 0.5em;
+  border-radius: 2em;
+}
+
+.tag--popular {
+  background: var(--complementary-color);
+  color: var(--white-color);
+}
+
+.tag--food {
+  background: var(--triadic-color);
+  color: var(--white-color);
+}
+
+.tag--drink {
+  background: var(--dark-color);
+  color: var(--white-color);
+}
+
+.tag--dessert {
+  background: var(--triadic2-color);
+  color: var(--white-color);
+}
+
+.radio-button,
+.check-box {
+  display: none;
+}

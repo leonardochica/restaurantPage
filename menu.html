@@ -1,0 +1,2097 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Caribean Restaurant</title>
+  </head>
+  <body>
+    <header id="menu" class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top__container">
+            <a href="index.html" class="logo">
+              <i class="fas fa-globe-americas"></i>
+              Caribean
+            </a>
+            <nav class="navbar">
+              <ul>
+                <li class="navbar__item">
+                  <a href="index.html" class="navbar__link">Home</a>
+                </li>
+                <li class="navbar__item navbar__dropdown">
+                  <a href="menu.html" class="navbar__link active"
+                    >Menu
+                    <i class="navbar__icon fas fa-chevron-right"></i>
+                  </a>
+                  <ul class="navbar__dropdown__subitem">
+                    <li class="navbar__subitem">
+                      <a href="#" class="navbar__link">Popular</a>
+                    </li>
+                    <li class="navbar__subitem">
+                      <a href="#" class="navbar__link">Dine-In</a>
+                    </li>
+                    <li class="navbar__subitem">
+                      <a href="#" class="navbar__link">Order Online</a>
+                    </li>
+                    <li class="navbar__subitem">
+                      <a href="#" class="navbar__link">Drinks</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar__item">
+                  <a href="about.html" class="navbar__link">About</a>
+                </li>
+                <li class="navbar__item navbar__dropdown">
+                  <a href="reservations.html" class="navbar__link"
+                    >Reservations<i
+                      class="navbar__icon fas fa-chevron-right"
+                    ></i
+                  ></a>
+                  <ul class="navbar__dropdown__subitem">
+                    <li class="navbar__subitem">
+                      <a href="reservations.html" class="navbar__link"
+                        >Reserve a Table</a
+                      >
+                    </li>
+                    <li class="navbar__subitem">
+                      <a
+                        href="reservations.html#section-private-events"
+                        class="navbar__link"
+                        >Private Events</a
+                      >
+                    </li>
+                    <li class="navbar__subitem">
+                      <a
+                        href="reservations.html#section-cooking-courses"
+                        class="navbar__link"
+                      >
+                        Courses</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar__item">
+                  <a href="locations.html" class="navbar__link">Locations </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="burger">
+              <div class="line"></div>
+            </div>
+            <div class="contact">
+              <a href="#" class="contact__item" title="832-599-1919">
+                <i
+                  class="contact__link icon icon--light fas fa-mobile-alt fa-2x"
+                ></i>
+                <!-- <span>832-599-1919</span> -->
+              </a>
+              <a href="#" class="contact__item">
+                <i
+                  class="contact__link icon icon--light fab fa-facebook fa-2x"
+                ></i>
+              </a>
+              <a href="#" class="contact__item">
+                <i
+                  class="contact__link icon icon--light fab fa-instagram fa-2x"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="showcase container">
+        <!-- Showcase -->
+        <section class="page__showcase">
+          <h1 class="page__title">
+            Our Menu
+          </h1>
+        </section>
+      </div>
+    </header>
+
+    <!-- Menu -->
+    <main class="section section-menu">
+      <div class="container">
+        <!-- Sort / Filter -->
+        <div class="sort">
+          <div class="collapsible">
+            <input
+              type="checkbox"
+              name="sort"
+              id="sort-check"
+              class="check-box"
+            />
+            <label for="sort-check" class="collapsible__header">
+              Sort by
+              <span class="sort__icon sort__icon--primary"></span>
+            </label>
+            <!-- Collapsible Items -->
+            <div class="collapsible__body">
+              <!-- Option 1 -->
+              <input
+                type="checkbox"
+                name="collapsible__check"
+                id="sort__check1"
+                class="check-box"
+              />
+              <label
+                for="sort__check1"
+                class="collapsible__subheader collapsible__subheader--popular"
+              >
+                Popular
+                <span class="sort__icon sort__icon--popular"></span>
+              </label>
+              <div class="collapsible__content" id="collapsible__option1">
+                <ul>
+                  <li class="collapsible__item">
+                    <a
+                      href="#"
+                      class="collapsible__link collapsible__link--food"
+                      >Plates</a
+                    >
+                  </li>
+                  <li class="collapsible__item">
+                    <a
+                      href="#"
+                      class="collapsible__link collapsible__link--drink"
+                      >Drinks</a
+                    >
+                  </li>
+                  <li class="collapsible__item">
+                    <a
+                      href="#"
+                      class="collapsible__link collapsible__link--dessert"
+                      >Desserts</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Option 2 -->
+              <input
+                type="checkbox"
+                name="collapsible__check"
+                id="sort__check2"
+                class="check-box"
+              />
+              <label
+                for="sort__check2"
+                class="collapsible__subheader collapsible__subheader--food"
+              >
+                Food
+                <span class="sort__icon sort__icon--food"></span>
+              </label>
+              <div class="collapsible__content" id="collapsible__option2">
+                <ul>
+                  <li class="collapsible__item">
+                    <a
+                      href="#"
+                      class="collapsible__link collapsible__link--food"
+                      >Meat</a
+                    >
+                  </li>
+                  <li class="collapsible__item">
+                    <a
+                      href="#"
+                      class="collapsible__link collapsible__link--food"
+                      >Seafood</a
+                    >
+                  </li>
+                  <li class="collapsible__item">
+                    <a
+                      href="#"
+                      class="collapsible__link collapsible__link--food"
+                      >Veggie</a
+                    >
+                  </li>
+                  <li class="collapsible__item">
+                    <a
+                      href="#"
+                      class="collapsible__link collapsible__link--food"
+                      >Grains</a
+                    >
+                  </li>
+                  <li class="collapsible__item">
+                    <a
+                      href="#"
+                      class="collapsible__link collapsible__link--food"
+                      >Fruits</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Option 3-->
+              <input
+                type="checkbox"
+                name="collapsible__check"
+                id="sort__check3"
+                class="check-box"
+              />
+              <label
+                for="sort__check3"
+                class="collapsible__subheader collapsible__subheader--drink"
+              >
+                Drinks
+                <span class="sort__icon sort__icon--drink"></span>
+              </label>
+              <div class="collapsible__content" id="collapsible__option3">
+                <ul>
+                  <li class="collapsible__item">
+                    <a
+                      href="#"
+                      class="collapsible__link collapsible__link--drink"
+                      >Cocktails</a
+                    >
+                  </li>
+                  <li class="collapsible__item">
+                    <a
+                      href="#"
+                      class="collapsible__link collapsible__link--drink"
+                      >Wines</a
+                    >
+                  </li>
+                  <li class="collapsible__item">
+                    <a
+                      href="#"
+                      class="collapsible__link collapsible__link--drink"
+                      >Beers</a
+                    >
+                  </li>
+                  <li class="collapsible__item">
+                    <a
+                      href="#"
+                      class="collapsible__link collapsible__link--drink"
+                      >Soft Drinks</a
+                    >
+                  </li>
+                  <li class="collapsible__item">
+                    <a
+                      href="#"
+                      class="collapsible__link collapsible__link--drink"
+                      >Juices</a
+                    >
+                  </li>
+                  <li class="collapsible__item">
+                    <a
+                      href="#"
+                      class="collapsible__link collapsible__link--drink"
+                      >Hot Drinks</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Option 4-->
+              <input
+                type="checkbox"
+                name="collapsible__check"
+                id="sort__check4"
+                class="check-box"
+              />
+              <label
+                for="sort__check4"
+                class="collapsible__subheader collapsible__subheader--dessert"
+              >
+                Desserts
+                <span class="sort__icon sort__icon--dessert"></span>
+              </label>
+              <div class="collapsible__content" id="collapsible__option4">
+                <ul>
+                  <li class="collapsible__item">
+                    <a
+                      href="#"
+                      class="collapsible__link collapsible__link--dessert"
+                      >Cakes</a
+                    >
+                  </li>
+                  <li class="collapsible__item">
+                    <a
+                      href="#"
+                      class="collapsible__link collapsible__link--dessert"
+                      >Frozen</a
+                    >
+                  </li>
+                  <li class="collapsible__item">
+                    <a
+                      href="#"
+                      class="collapsible__link collapsible__link--dessert"
+                      >Jellied</a
+                    >
+                  </li>
+                  <li class="collapsible__item">
+                    <a
+                      href="#"
+                      class="collapsible__link collapsible__link--dessert"
+                      >Puddings</a
+                    >
+                  </li>
+                  <li class="collapsible__item">
+                    <a
+                      href="#"
+                      class="collapsible__link collapsible__link--dessert"
+                      >Pastries</a
+                    >
+                  </li>
+                  <li class="collapsible__item">
+                    <a
+                      href="#"
+                      class="collapsible__link collapsible__link--dessert"
+                      >Sweet</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Radio Buttons -->
+        <input
+          type="radio"
+          name="menu"
+          id="lunch-option"
+          class="radio-button"
+          checked
+        />
+        <input
+          type="radio"
+          name="menu"
+          id="dinner-option"
+          class="radio-button"
+        />
+        <input
+          type="radio"
+          name="menu"
+          id="drinks-option"
+          class="radio-button"
+        />
+        <input
+          type="radio"
+          name="menu"
+          id="desserts-option"
+          class="radio-button"
+        />
+        <input
+          type="radio"
+          name="menu"
+          id="appetizers-option"
+          class="radio-button"
+        />
+        <div class="tabs">
+          <label for="lunch-option" class="tab__label">Lunch</label>
+          <label for="dinner-option" class="tab__label">Dinner</label>
+          <label for="drinks-option" class="tab__label">Drinks</label>
+          <label for="desserts-option" class="tab__label">Desserts</label>
+          <label for="appetizers-option" class="tab__label">Appetizers</label>
+        </div>
+
+        <!-- Lunch Menu -->
+        <div class="tab tab__lunch">
+          <div class="tab__content">
+            <!-- Tab Item 1 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/lunch/img1.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Yellow Food with Green Relish</h3>
+                <p class="tab__description">
+                  Chicken, Ham, Yellow Cheese, Relish, Cream
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$19</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--food">Meat</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 2 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/lunch/img2.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Chicken with Broccoli</h3>
+                <p class="tab__description">
+                  Chicken, Rice, Broccoli, Sweet Sauce
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$15</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--food">Meat</p>
+                  <p class="tab__tag tag tag--popular">Popular</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 3 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/lunch/img3.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Brown Slice Eggplants</h3>
+                <p class="tab__description">
+                  Eggplant, olive oil, sea salt, garlic powder, black pepper
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$12</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--food">Veggie</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 4 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/lunch/img4.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Steak Fajitas with Sauce</h3>
+                <p class="tab__description">
+                  Steak, ribs, bell peppers, lime, olive oil
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$17</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--food">Meat</p>
+                  <p class="tab__tag tag tag--popular">Popular</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 5 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/lunch/img5.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Pasta with Butter Tomato Sauce</h3>
+                <p class="tab__description">
+                  Pasta, olive oil, garlic, salted butter, whole peeled tomatoes
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$15</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--food">Grain</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 6 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/lunch/img6.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Homemade Burger with Egg</h3>
+                <p class="tab__description">
+                  Ground beef, steak sauce, coating mix, hamburger buns
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$12</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--food">Meat</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 7 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/lunch/img7.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Lobster Soup</h3>
+                <p class="tab__description">
+                  Lobster tails, olive oil, lemon juice, black pepper
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$19</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--food">Seafood</p>
+                  <p class="tab__tag tag tag--popular">Popular</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 8 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/lunch/img8.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Mixed Chicken & Steak Burrito</h3>
+                <p class="tab__description">
+                  Ground beef, steak sauce, coating mix, hamburger buns
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$9</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--food">Meat</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Dinner Menu -->
+        <div class="tab tab__dinner">
+          <div class="tab__content">
+            <!-- Tab Item 1 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/dinner/img1.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Chicken with Broccoli</h3>
+                <p class="tab__description">
+                  Chicken, Rice, Broccoli, Sweet Sauce
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$16</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--food">Meat</p>
+                  <p class="tab__tag tag tag--popular">Popular</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 2 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/dinner/img2.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Yellow Food with Green Relish</h3>
+                <p class="tab__description">
+                  Chicken, Ham, Yellow Cheese, Relish, Cream
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$15</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--food">Veggie</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 3 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/dinner/img3.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Brown Slice Eggplants</h3>
+                <p class="tab__description">
+                  Eggplant, olive oil, sea salt, garlic powder, black pepper
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$13</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--food">Veggie</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 4 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/dinner/img4.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Steak Fajitas with Sauce</h3>
+                <p class="tab__description">
+                  Steak, ribs, bell peppers, lime, olive oil
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$15</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--food">Meat</p>
+                  <p class="tab__tag tag tag--popular">Popular</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 5 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/dinner/img5.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Pasta with Butter Tomato Sauce</h3>
+                <p class="tab__description">
+                  Pasta, olive oil, garlic, salted butter, whole peeled tomatoes
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$15</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--food">Grain</p>
+                  <p class="tab__tag tag tag--food">Fruit</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 6 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/dinner/img6.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Homemade Burger with Egg</h3>
+                <p class="tab__description">
+                  Ground beef, steak sauce, coating mix, hamburger buns
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$12</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--food">Meat</p>
+                  <p class="tab__tag tag tag--popular">Popular</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 7 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/dinner/img7.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Mixed Steak, Chicken, Egg, and Chips</h3>
+                <p class="tab__description">
+                  Steak, Chicken, Tomatoes, Chips, Doritos
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$10</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--food">Veggie</p>
+                  <p class="tab__tag tag tag--food">Grain</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 8 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/dinner/img8.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Homemade Burger with Egg</h3>
+                <p class="tab__description">
+                  Ground beef, steak sauce, coating mix, hamburger buns
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$12</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--food">Meat</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Drinks Menu -->
+        <div class="tab tab__drinks">
+          <div class="tab__content">
+            <!-- Tab Item 1 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/drinks/img1.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Argentinian Red Wine</h3>
+                <p class="tab__description">
+                  Cabernet Sauvignon, Malbec, Merlot
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$19</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--drink">Wine</p>
+                  <p class="tab__tag tag tag--popular">Popular</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 2 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/drinks/img2.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Malibu Seasons Cocktail</h3>
+                <p class="tab__description">
+                  Malibu rum, pineapple juice, grenadine
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$14</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--drink">Cocktail</p>
+                  <p class="tab__tag tag tag--popular">Popular</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 3 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/drinks/img3.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Local and International Beers</h3>
+                <p class="tab__description">
+                  Heineken, Budlight, Budweiser, Stella
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$12</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--drink">Beer</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 4 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/drinks/img4.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Fresh Squeezed Orange Juice</h3>
+                <p class="tab__description">
+                  Oranges, honey, ginger, pink salt
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$17</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--drink">Juice</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 5 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/drinks/img5.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Meyer Lemon Mojito</h3>
+                <p class="tab__description">
+                  Rum, soda water, lemon juice, fresh mint, white sugar
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$12</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--drink">Cocktail</p>
+                  <p class="tab__tag tag tag--popular">Popular</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 6 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/drinks/img6.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Strawberrie Smoothie</h3>
+                <p class="tab__description">
+                  Chia seeds, almond milk, frozen strawberries, ripe banana
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$9</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--drink">Juice</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 7 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/drinks/img7.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Strawberrie Smoothie</h3>
+                <p class="tab__description">
+                  Chia seeds, almond milk, frozen strawberries, ripe banana
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$9</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--drink">Hot Drink</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 8 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/drinks/img8.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Strawberrie Smoothie</h3>
+                <p class="tab__description">
+                  Chia seeds, almond milk, frozen strawberries, ripe banana
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$9</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--drink">Juice</p>
+                  <p class="tab__tag tag tag--popular">Popular</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Desserts Menu -->
+        <div class="tab tab__desserts">
+          <div class="tab__content">
+            <!-- Tab Item 1 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/desserts/img1.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Coffee Cake with Caramel</h3>
+                <p class="tab__description">
+                  Caramel, Whip Cream, Coffee Flavour
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$8</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--dessert">Cake</p>
+                  <p class="tab__tag tag tag--popular">Popular</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 2 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/desserts/img2.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Homemade Strawberrie Cake</h3>
+                <p class="tab__description">
+                  White cake mix, strawberry gelatin, frosting, sugar
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$11</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--dessert">Jellied</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 3 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/desserts/img3.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Vanilla Cupcakes</h3>
+                <p class="tab__description">
+                  Sour cream, heavy cream, eggs, baking powder, sugar
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$7</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--dessert">Sweet</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 4 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/desserts/img4.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Coconut Blondies with Dark Chocolate</h3>
+                <p class="tab__description">
+                  Brown sugar, coconut, sweet chocolate chips
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$11</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--dessert">Pudding</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 5 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/desserts/img5.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Meyer Lemon Mojito</h3>
+                <p class="tab__description">
+                  Rum, soda water, lemon juice, fresh mint, white sugar
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$12</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--dessert">Pastries</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 6 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/desserts/img6.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Strawberrie Smoothie</h3>
+                <p class="tab__description">
+                  Chia seeds, almond milk, frozen strawberries, ripe banana
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$9</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--dessert">Cheese</p>
+                  <p class="tab__tag tag tag--dessert">Pastries</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 7 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/desserts/img7.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Strawberrie Smoothie</h3>
+                <p class="tab__description">
+                  Chia seeds, almond milk, frozen strawberries, ripe banana
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$9</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--dessert">Frozen</p>
+                  <p class="tab__tag tag tag--popular">Popular</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 8 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/desserts/img8.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Strawberrie Smoothie</h3>
+                <p class="tab__description">
+                  Chia seeds, almond milk, frozen strawberries, ripe banana
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$9</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--dessert">Sweet</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Appetizers Menu -->
+        <div class="tab tab__appetizers">
+          <div class="tab__content">
+            <!-- Tab Item 1 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/appetizers/img1.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Yellow Food with Green Relish</h3>
+                <p class="tab__description">
+                  Chicken, Ham, Yellow Cheese, Relish, Cream
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$19</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--food">Meat</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 2 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/appetizers/img2.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Chicken with Broccoli</h3>
+                <p class="tab__description">
+                  Chicken, Rice, Broccoli, Sweet Sauce
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$15</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--food">Meat</p>
+                  <p class="tab__tag tag tag--popular">Popular</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 3 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/appetizers/img3.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Brown Slice Eggplants</h3>
+                <p class="tab__description">
+                  Eggplant, olive oil, sea salt, garlic powder, black pepper
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$12</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--food">Veggie</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 4 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/appetizers/img4.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Steak Fajitas with Sauce</h3>
+                <p class="tab__description">
+                  Steak, ribs, bell peppers, lime, olive oil
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$17</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--food">Meat</p>
+                  <p class="tab__tag tag tag--popular">Popular</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 5 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/appetizers/img5.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Pasta with Butter Tomato Sauce</h3>
+                <p class="tab__description">
+                  Pasta, olive oil, garlic, salted butter, whole peeled tomatoes
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$15</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--food">Grain</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 6 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/appetizers/img6.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Homemade Burger with Egg</h3>
+                <p class="tab__description">
+                  Ground beef, steak sauce, coating mix, hamburger buns
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$12</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--food">Meat</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 7 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/appetizers/img7.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Lobster Soup</h3>
+                <p class="tab__description">
+                  Lobster tails, olive oil, lemon juice, black pepper
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$19</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--food">Seafood</p>
+                  <p class="tab__tag tag tag--popular">Popular</p>
+                </div>
+              </div>
+            </div>
+            <!-- Tab Item 8 -->
+            <div class="tab__item">
+              <div class="tab__img">
+                <img src="images/menu/appetizers/img8.jpg" alt="" />
+              </div>
+              <div class="tab__info">
+                <h3 class="tab__title">Mixed Chicken & Steak Burrito</h3>
+                <p class="tab__description">
+                  Ground beef, steak sauce, coating mix, hamburger buns
+                </p>
+                <button class="tab__button btn btn--linear">Order now</button>
+                <p class="tab__price">$9</p>
+                <div class="tag-container">
+                  <p class="tab__tag tag tag--food">Meat</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Order Online Section -->
+    <section class="section section-online" id="order-online">
+      <div class="container">
+        <div class="section__header">
+          <div class="section__line"></div>
+          <h1 class="section__title">Order Online</h1>
+          <div class="section__line"></div>
+        </div>
+        <div class="section__body">
+          <div class="order__tabs">
+            <button
+              class="order__tab active"
+              id="select-item-tab"
+              data-tab-target-order="#select-item"
+            >
+              1. Select Items
+            </button>
+            <button
+              class="order__tab"
+              id="add-order-tab"
+              data-tab-target-order="#add-order"
+              disabled
+            >
+              2. Add to Order
+            </button>
+            <button
+              class="order__tab"
+              id="checkout-tab"
+              data-tab-target-order="#checkout"
+              disabled
+            >
+              3. Checkout
+            </button>
+          </div>
+          <!-- Tab Content: Form -->
+          <form action="#" class="order__form" novalidate id="order-form">
+            <div class="order__tabs-content">
+              <!-- Select Item Tab Content -->
+              <div
+                class="order__select-item order__tab-content tab-active"
+                id="select-item"
+              >
+                <!-- Collapsible Items -->
+                <div class="collapsible__container">
+                  <!-- Collapsible 1 -->
+                  <div class="collapsible">
+                    <!-- Option 1 -->
+                    <input
+                      type="checkbox"
+                      name="collapsible-order"
+                      id="item--meat"
+                      class="check-box"
+                    />
+                    <label for="item--meat" class="collapsible__subheader">
+                      Meat
+                      <span class="order__icon"></span>
+                      <span class="order__icon order__icon--meat"></span>
+                    </label>
+                    <div
+                      class="collapsible__content"
+                      id="order__collapsible-option1"
+                    >
+                      <ul>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="meat-type"
+                            id="meat-option1"
+                            value="Steak Fajitas with Sauce"
+                            onchange=""
+                          />
+                          <label for="meat-option1" class="order__label"
+                            >Steak Fajitas with Sauce
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="meat-type"
+                            id="meat-option2"
+                            value="Yellow Food with Green Relish"
+                          />
+                          <label for="meat-option2" class="order__label"
+                            >Yellow Food with Green Relish
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="meat-type"
+                            id="meat-option3"
+                            value="Chicken with Broccoli"
+                          />
+                          <label for="meat-option3" class="order__label"
+                            >Chicken with Broccoli
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="meat-type"
+                            id="meat-option4"
+                            value="Homemade Burger with Egg"
+                          />
+                          <label for="meat-option4" class="order__label"
+                            >Homemade Burger with Egg
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="meat-type"
+                            id="meat-option5"
+                            value="Mixed Chicken & Steak Burrito"
+                          />
+                          <label for="meat-option5" class="order__label"
+                            >Mixed Chicken & Steak Burrito
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="meat-type"
+                            id="meat-option6"
+                            value="Grilled Filet Mignon"
+                          />
+                          <label for="meat-option6" class="order__label"
+                            >Grilled Filet Mignon
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Collapsible 2 -->
+                  <div class="collapsible">
+                    <input
+                      type="checkbox"
+                      name="collapsible-order"
+                      id="item--seafood"
+                      class="check-box"
+                    />
+                    <label for="item--seafood" class="collapsible__subheader">
+                      Seafood
+                      <span class="order__icon"></span>
+                      <span class="order__icon order__icon--seafood"></span>
+                    </label>
+                    <div
+                      class="collapsible__content"
+                      id="order__collapsible-option2"
+                    >
+                      <ul>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="seafood-type"
+                            id="seafood-option1"
+                            value="Lobster Soup"
+                          />
+                          <label for="seafood-option1" class="order__label"
+                            >Lobster Soup
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="seafood-type"
+                            id="seafood-option2"
+                            value="Crawfish with Buffalo Sauce"
+                          />
+                          <label for="seafood-option2" class="order__label"
+                            >Crawfish with Buffalo Sauce
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="seafood-type"
+                            id="seafood-option3"
+                            value="Cioppino"
+                          />
+                          <label for="seafood-option3" class="order__label"
+                            >Cioppino
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="seafood-type"
+                            id="seafood-option4"
+                            value="Shrimp scampi"
+                          />
+                          <label for="seafood-option4" class="order__label"
+                            >Shrimp scampi
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="seafood-type"
+                            id="seafood-option5"
+                            value="Paila marina"
+                          />
+                          <label for="seafood-option5" class="order__label"
+                            >Paila marina
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="seafood-type"
+                            id="seafood-option6"
+                            value="Paella"
+                          />
+                          <label for="seafood-option6" class="order__label"
+                            >Paella
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Collapsible 3 -->
+                  <div class="collapsible">
+                    <input
+                      type="checkbox"
+                      name="collapsible-order"
+                      id="item--veggie"
+                      class="check-box"
+                    />
+                    <label for="item--veggie" class="collapsible__subheader">
+                      Veggie
+                      <span class="order__icon"></span>
+                      <span class="order__icon order__icon--veggie"></span>
+                    </label>
+                    <div
+                      class="collapsible__content"
+                      id="order__collapsible-option3"
+                    >
+                      <ul>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="veggie-type"
+                            id="veggie-option1"
+                            value="Brown Slice Eggplants"
+                          />
+                          <label for="veggie-option1" class="order__label"
+                            >Brown Slice Eggplants
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="veggie-type"
+                            id="veggie-option2"
+                            value="Tex-Mex Veggie Platter"
+                          />
+                          <label for="veggie-option2" class="order__label"
+                            >Tex-Mex Veggie Platter
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="veggie-type"
+                            id="veggie-option3"
+                            value="Mezze Platter"
+                          />
+                          <label for="veggie-option3" class="order__label"
+                            >Mezze Platter
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="veggie-type"
+                            id="veggie-option4"
+                            value="Rainbow Fruit & Veggie Plate"
+                          />
+                          <label for="veggie-option4" class="order__label"
+                            >Rainbow Fruit & Veggie Plate
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Collapsible 4 -->
+                  <div class="collapsible">
+                    <input
+                      type="checkbox"
+                      name="collapsible-order"
+                      id="item--appetizers"
+                      class="check-box"
+                    />
+                    <label
+                      for="item--appetizers"
+                      class="collapsible__subheader"
+                    >
+                      Appetizers
+                      <span class="order__icon"></span>
+                      <span class="order__icon order__icon--appetizers"></span>
+                    </label>
+                    <div
+                      class="collapsible__content"
+                      id="order__collapsible-option4"
+                    >
+                      <ul>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="appetizers-type"
+                            id="appetizers-option1"
+                            value="Sausage Cheese Balls"
+                          />
+                          <label for="appetizers-option1" class="order__label"
+                            >Sausage Cheese Balls
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="appetizers-type"
+                            id="appetizers-option2"
+                            value="Latin American Empanadas"
+                          />
+                          <label for="appetizers-option2" class="order__label"
+                            >Latin American Empanadas
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="appetizers-type"
+                            id="appetizers-option3"
+                            value="Tostones with Shrimp and Cilantro Pesto"
+                          />
+                          <label for="appetizers-option3" class="order__label"
+                            >Tostones with Shrimp and Cilantro Pesto
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="appetizers-type"
+                            id="appetizers-option4"
+                            value="Avocado Chimichurri Bruschetta"
+                          />
+                          <label for="appetizers-option4" class="order__label"
+                            >Avocado Chimichurri Bruschetta
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="appetizers-type"
+                            id="appetizers-option5"
+                            value="Fried Cheese Balls "
+                          />
+                          <label for="appetizers-option5" class="order__label"
+                            >Fried Cheese Balls
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapsible__container">
+                  <!-- Collapsible 5 -->
+                  <div class="collapsible">
+                    <input
+                      type="checkbox"
+                      name="collapsible-order"
+                      id="item--desserts"
+                      class="check-box"
+                    />
+                    <label for="item--desserts" class="collapsible__subheader">
+                      Desserts
+                      <span class="order__icon"></span>
+                      <span class="order__icon order__icon--desserts"></span>
+                    </label>
+                    <div
+                      class="collapsible__content"
+                      id="order__collapsible-option5"
+                    >
+                      <ul>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="desserts-type"
+                            id="desserts-option1"
+                            value="Strawberries with Cream"
+                          />
+                          <label for="desserts-option1" class="order__label"
+                            >Strawberries with Cream
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="desserts-type"
+                            id="desserts-option2"
+                            value="Peanut Butter Chocolate Dessert"
+                          />
+                          <label for="desserts-option2" class="order__label"
+                            >Peanut Butter Chocolate Dessert
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="desserts-type"
+                            id="desserts-option3"
+                            value="Tiramissu"
+                          />
+                          <label for="desserts-option3" class="order__label"
+                            >Tiramissu
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="desserts-type"
+                            id="desserts-option4"
+                            value="Classic chocolate mousse"
+                          />
+                          <label for="desserts-option4" class="order__label"
+                            >Classic chocolate mousse
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="desserts-type"
+                            id="desserts-option5"
+                            value="Cheesecake"
+                          />
+                          <label for="desserts-option5" class="order__label"
+                            >Cheesecake
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Collapsible 6 -->
+                  <div class="collapsible">
+                    <input
+                      type="checkbox"
+                      name="collapsible-order"
+                      id="item--salads"
+                      class="check-box"
+                    />
+                    <label for="item--salads" class="collapsible__subheader">
+                      Salads
+                      <span class="order__icon"></span>
+                      <span class="order__icon order__icon--salads"></span>
+                    </label>
+                    <div
+                      class="collapsible__content"
+                      id="order__collapsible-option6"
+                    >
+                      <ul>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="salads-type"
+                            id="salads-option1"
+                            value="Mexican Chopped Salad"
+                          />
+                          <label for="salads-option1" class="order__label"
+                            >Mexican Chopped Salad
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="salads-type"
+                            id="salads-option2"
+                            value="Chickpea Salad"
+                          />
+                          <label for="salads-option2" class="order__label"
+                            >Chickpea Salad
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="salads-type"
+                            id="salads-option3"
+                            value="Avocado Caprese Salad"
+                          />
+                          <label for="salads-option3" class="order__label"
+                            >Avocado Caprese Salad
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="salads-type"
+                            id="salads-option4"
+                            value="Mexican Quinoa Salad with Orange Lime"
+                          />
+                          <label for="salads-option4" class="order__label"
+                            >Mexican Quinoa Salad with Orange Lime
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Collapsible 7 -->
+                  <div class="collapsible">
+                    <input
+                      type="checkbox"
+                      name="collapsible-order"
+                      id="item--sides"
+                      class="check-box"
+                    />
+                    <label for="item--sides" class="collapsible__subheader">
+                      Sides
+                      <span class="order__icon"></span>
+                      <span class="order__icon order__icon--sides"></span>
+                    </label>
+                    <div
+                      class="collapsible__content"
+                      id="order__collapsible-option7"
+                    >
+                      <ul>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="sides-type"
+                            id="sides-option1"
+                            value="Patatas Bravas Chilenos (Chile Potatoes)"
+                          />
+                          <label for="sides-option1" class="order__label"
+                            >Patatas Bravas Chilenos (Chile Potatoes)
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="sides-type"
+                            id="sides-option2"
+                            value="Latin Roasted Potatoes"
+                          />
+                          <label for="sides-option2" class="order__label"
+                            >Latin Roasted Potatoes
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="sides-type"
+                            id="sides-option3"
+                            value="Latin Yellow Rice"
+                          />
+                          <label for="sides-option3" class="order__label"
+                            >Latin Yellow Rice
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="sides-type"
+                            id="sides-option4"
+                            value="Curtido (Salvadoran Spicy Cabbage Slaw)"
+                          />
+                          <label for="sides-option4" class="order__label"
+                            >Curtido (Salvadoran Spicy Cabbage Slaw)
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="sides-type"
+                            id="sides-option5"
+                            value="Cheese Fries"
+                          />
+                          <label for="sides-option5" class="order__label"
+                            >Cheese Fries
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="sides-type"
+                            id="sides-option6"
+                            value="Potato Salad"
+                          />
+                          <label for="sides-option6" class="order__label"
+                            >Potato Salad
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="sides-type"
+                            id="sides-option7"
+                            value="Mexican Beans"
+                          />
+                          <label for="sides-option7" class="order__label"
+                            >Mexican Beans
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="sides-type"
+                            id="sides-option8"
+                            value="French Fries"
+                          />
+                          <label for="sides-option8" class="order__label"
+                            >French Fries
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Collapsible 8 -->
+                  <div class="collapsible">
+                    <input
+                      type="checkbox"
+                      name="collapsible-order"
+                      id="item--drinks"
+                      class="check-box"
+                    />
+                    <label for="item--drinks" class="collapsible__subheader">
+                      Drinks
+                      <span class="order__icon"></span>
+                      <span class="order__icon order__icon--drinks"></span>
+                    </label>
+                    <div
+                      class="collapsible__content"
+                      id="order__collapsible-option8"
+                    >
+                      <ul>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="drinks-type"
+                            id="drinks-option1"
+                            value="Coffee"
+                          />
+                          <label for="drinks-option1" class="order__label"
+                            >Coffee
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="drinks-type"
+                            id="drinks-option2"
+                            value="Water"
+                          />
+                          <label for="drinks-option2" class="order__label"
+                            >Water
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="drinks-type"
+                            id="drinks-option3"
+                            value="Wines"
+                          />
+                          <label for="drinks-option3" class="order__label"
+                            >Wines
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="drinks-type"
+                            id="drinks-option4"
+                            value="Beer"
+                          />
+                          <label for="drinks-option4" class="order__label"
+                            >Beer
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="drinks-type"
+                            id="drinks-option5"
+                            value="Tea"
+                          />
+                          <label for="drinks-option5" class="order__label"
+                            >Tea
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="drinks-type"
+                            id="drinks-option6"
+                            value="Soda"
+                          />
+                          <label for="drinks-option6" class="order__label"
+                            >Soda
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="drinks-type"
+                            id="drinks-option7"
+                            value="Orange Juice"
+                          />
+                          <label for="drinks-option7" class="order__label"
+                            >Orange Juice
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                        <li class="collapsible__item">
+                          <input
+                            type="checkbox"
+                            name="drinks-type"
+                            id="drinks-option8"
+                            value="Milk"
+                          />
+                          <label for="drinks-option8" class="order__label"
+                            >Milk
+                            <i class="order__checkbox"></i>
+                            <i class="order__box"></i
+                          ></label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapsible__button">
+                  <a
+                    class="btn btn--primary"
+                    id="order__select-item-btn"
+                    href="#add-order"
+                    >Continue Order</a
+                  >
+                </div>
+                <p id="order-error-message"></p>
+              </div>
+              <!-- Add Order Tab Content -->
+              <div class="order__add-order order__tab-content" id="add-order">
+                <div class="order-tab__header">
+                  <h4 class="order-tab__title">Menu Items</h4>
+                  <h4 class="order-tab__title">Price per order</h4>
+                  <h4 class="order-tab__title">Quantity</h4>
+                </div>
+                <div class="order__selected-items"></div>
+                <div class="collapsible__button">
+                  <a
+                    class="btn btn--primary"
+                    id="order__add-btn"
+                    href="#checkout"
+                    >Proceed to Checkout</a
+                  >
+                </div>
+              </div>
+              <!-- Checkout Tab Content -->
+              <div class="order__checkout order__tab-content" id="checkout">
+                <div class="order-tab__header">
+                  <h4 class="order-tab__title">Review Order</h4>
+                </div>
+                <div class="order-tab__body"></div>
+                <div class="collapsible__button">
+                  <a
+                    class="btn btn--primary"
+                    id="order__checkout-btn"
+                    href="#"
+                    >Checkout</a
+                  >
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__main-links">
+          <ul>
+            <li class="footer__title">Main Links</li>
+            <li class="footer__item">
+              <a href="index.html" class="footer__link">Home</a>
+            </li>
+            <li class="footer__item">
+              <a href="menu.html" class="footer__link">Menu</a>
+            </li>
+            <li class="footer__item">
+              <a href="reservations.html" class="footer__link">Reservations</a>
+            </li>
+            <li class="footer__item">
+              <a href="about.html" class="footer__link">About</a>
+            </li>
+            <li class="footer__item">
+              <a href="locations.html" class="footer__link">Locations</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__services">
+          <ul>
+            <li class="footer__title">Services</li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Private Events</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Order Online</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Cooking Classes</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <ul>
+            <li class="footer__title">Contact Us</li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">
+                <i class="fas fa-mobile-alt"></i> 832-599-1919
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">
+                <i class="fas fa-envelope"></i> caribean@contact.com
+              </a>
+            </li>
+            <li class="footer__item">
+              <ul class="footer__social">
+                <li class="footer__item">
+                  <a href="#">
+                    <i class="footer__icon fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#">
+                    <i class="footer__icon fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#">
+                    <i class="footer__icon fab fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__discount">
+          <h3 class="footer__title">First Time Visiting Us</h3>
+          <label class="footer__label" for="email">Email</label>
+          <input
+            type="email"
+            class="footer__input"
+            placeholder="Enter Email"
+            id="email"
+          />
+          <button class="btn btn--white footer__button">
+            Get 15% Discount
+          </button>
+        </div>
+        <div class="footer__copyright">
+          <p class="copyright">Copyright &copy; 2020 All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Main Script -->
+    <script src="js/main.js"></script>
+    <script src="js/order.js"></script>
+
+    <!-- Google Maps API -->
+    <!-- <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrA9Ur7OvvqKAEJgbewIocxpGQT8xY70o&callback=initMap"
+      async
+      defer
+    ></script> -->
+  </body>
+</html>

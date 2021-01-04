@@ -1,0 +1,4 @@
+Reservations Page: 
+> Rooms Images: Add with JS a caption to each clicked picture
+Menu Page:
+> Filter menu items
